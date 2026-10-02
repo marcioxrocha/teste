@@ -1,20 +1,23 @@
 <html>
-	<head>
-		<script>
-            (async () => {
-			    let response = await fetch(`https://api-4dimobi-llm-dbe9519356c3.herokuapp.com/chatbot/v1/public/be9e25b9-5957-48d5-858d-d6ebc474d2f3/default/script/${encodeURIComponent('#wc')}/${encodeURIComponent(`"${new Date().getTime()}"`)}/create?_=${new Date().getTime()}`, {
-                    method: "GET",
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                });
-                let script = await response.text();
-                eval(script);            
-            })();		
-		</script>
-	</head>
-	<body>
-		<div id="wc"></div>
-	</body>
+
+<head>
+    <script>
+        (async () => {
+            let response = await fetch(`https://api-4dimobi-llm-dbe9519356c3.herokuapp.com/chatbot/v1/public/be9e25b9-5957-48d5-858d-d6ebc474d2f3/default/script/${encodeURIComponent('#wc')}/${encodeURIComponent(`"${new Date().getTime()}"`)}/create?_=${new Date().getTime()}`, {
+                method: "GET",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiL045VllaS05xZjBwZmNteURiUGI2UGdya3JVSzRIRmRMWFpSWVJCVEdCSmZIS3JpVmhSMGVxM0ZtUGQra0NxbEx3cEdYa0JCZm9LVlVlUlYydDJ4UjlCdzlaWGJDVVBrOExyeGNSM3hVYnRmc3YrNmJYL2Y1eWdIOWgwdEtXN3lac2dUM0tZQlBPek5hWnMzVVl3LzFpRWUxMGRhZWhYOEVTVDZnWDBTc3dKLzJlSjk4TlF0YWlpNlFiM3NkSS84bEUxTEtHanVQQVIvTlpna3hCa3R0WGlZUVlJZUVFQmQ3ZUczZC9pLzhicURnMFFnemQwTVU4UDdtZ0NuVnMvVlF5MXloSlRicjhwU3BOWmVPSzJJdkFQcGViSkQxYktSb2ZBR3I0SXRVY29PZE9Ta3c3NGJmV08vcnBBYXA3U1hGOXlJRUR4ZldXektGS2RRNW1HRC8zUmxPY3Z3VFovR2xLMkdNQT09IiwiaWF0IjoxNzkwOTYzOTQzLCJleHAiOjE3OTIyNTk5NDN9.ySZ6wTvLBAmVvS_0VukhCLq7s9ybuZxlRn43Bm_64EA'
+                }
+            });
+            let script = await response.text();
+            eval(script);
+        })();		
+    </script>
+</head>
+
+<body>
+    <div id="wc"></div>
+</body>
+
 </html>
-        
