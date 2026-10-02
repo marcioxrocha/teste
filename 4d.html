@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<script>
+            (async () => {
+			    let response = await fetch(`https://api-4dimobi-llm-dbe9519356c3.herokuapp.com/chatbot/v1/public/be9e25b9-5957-48d5-858d-d6ebc474d2f3/default/script/${encodeURIComponent('#wc')}/${encodeURIComponent(`"${new Date().getTime()}"`)}/create?_=${new Date().getTime()}`, {
+                    method: "GET",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                let script = await response.text();
+                eval(script);            
+            })();		
+		</script>
+	</head>
+	<body>
+		<div id="wc"></div>
+	</body>
+</html>
+        
